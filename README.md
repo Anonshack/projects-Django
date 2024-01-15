@@ -1,0 +1,5 @@
+Model ViewSets: ModelViewSet is a generic view provided by DRF to support model objects. You can see that it is organized to link each of the models, such as Viloyat, Tuman, Stansiya, Osimlik, Hashorot, and DataHashorot, to separate model view-sets (ModelViewSet).
+Serializers: Serializers are used to convert your model objects to JSON or other formats. ViloyatSerializer, TumanSerializer, StansiyaSerializer, OsimlikSerializer, HashorotSerializer, DataHashorotSerializer are codes used to adapt your models to serializers.
+DefaultRouter and URLs: DefaultRouter is a means provided by DRF to automatically create URLs for the API. Through router.register, each model view-set is automatically accumulated into URLs.
+urlpatterns: The urlpatterns list shows the URLs you are using from the router you created. The path('', include(router.urls)) then automatically combines the URLs in the list.
+These codes simplify and synchronize the creation of model views and URLs in DRF for you. They are ready for performing actions such as list, create, retrieve, update, partial_update, and destroy for each model in your API
